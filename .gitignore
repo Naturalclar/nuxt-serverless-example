@@ -91,3 +91,6 @@ sw.*
 
 # server
 dist-server
+
+# cdk generated files
+cdk.out

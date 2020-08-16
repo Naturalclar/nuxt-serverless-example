@@ -11,7 +11,8 @@ export const createApp = (config: Object) => {
 
   const nuxt = new Nuxt({
     ...config,
-    dev: isDev
+    dev: isDev,
+    _start: !isDev
   });
   /** middleware */
   app.use(setHeadersMiddleware);

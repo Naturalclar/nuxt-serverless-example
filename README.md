@@ -1,5 +1,9 @@
 # nuxt-serverless-sample
 
+Sample repository for nuxt.js + aws-serverless-express + aws-cdk
+
+Credits for author of this post. https://wani.kr/posts/2020/02/19/aws-cdk-3-nuxt/
+
 ## Build Setup
 
 ```bash
