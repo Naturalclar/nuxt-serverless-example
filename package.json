@@ -6,14 +6,26 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "generate": "nuxt-ts generate",
+    "build:server": "tsc -b tsconfig.server.json",
+    "test:server": "node ./dist-server/index.local.js"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
+    "@aws-cdk/aws-apigateway": "^1.59.0",
+    "@aws-cdk/aws-lambda": "^1.59.0",
+    "@aws-cdk/core": "^1.59.0",
     "@nuxt/types": "^2.14.0",
-    "@nuxt/typescript-build": "^2.0.2"
+    "@nuxt/typescript-build": "^2.0.2",
+    "@types/aws-lambda": "^8.10.61",
+    "@types/aws-serverless-express": "^3.3.3",
+    "@types/express": "^4.17.7",
+    "aws-cdk": "^1.59.0",
+    "aws-lambda": "^1.0.6",
+    "aws-serverless-express": "^3.3.8",
+    "express": "^4.17.1"
   }
 }
